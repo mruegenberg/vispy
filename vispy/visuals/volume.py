@@ -288,7 +288,7 @@ TRANSLUCENT_SNIPPETS = dict(
         vec4 integrated_color = vec4(0., 0., 0., 0.);
         """,
     in_loop="""
-            color = $cmap(val);
+            // color = $cmap(val);
             float a1 = integrated_color.a;
             float a2 = color.a * (1 - a1);
             float alpha = max(a1 + a2, 0.001);
